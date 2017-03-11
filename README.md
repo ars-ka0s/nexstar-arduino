@@ -6,6 +6,8 @@ Library for communicating with telescope mounts based on the Celestron NexStar 4
 
 This library was developed based mainly on information published by Andre Paquette in his [NexStar AUX Command Set](http://www.paquettefamily.ca/nexstar/NexStar_AUX_Commands_10.pdf) and some additional probing of the interface on the specific model I was playing with.
 
+Not all of the commands detailed in that document are implemented here.  I did not personally have a need for features like PEC and index-finding, so those functions are not implemented because I didn't want to waste time debugging them.
+
 The code was tested against a pair of newer GT-series mounts which internally have 4/5SE boards, thus it may not work with other models, or even similar ones of an older vintage.
 
 ## Pinout

@@ -1,0 +1,32 @@
+# Syntax highlighting keywords
+
+# KEYWORD1 - Datatypes
+
+int24	KEYWORD1
+direction	KEYWORD1
+reply	KEYWORD1
+NexStar	KEYWORD1
+MotorController	KEYWORD1
+
+# KEYWORD2 - Methods / functions / instances
+
+azimuthMC	KEYWORD2
+elevationMC	KEYWORD2
+getPosition	KEYWORD2
+setPosition	KEYWORD2
+setBacklashCompensation	KEYWORD2
+isSlewing	KEYWORD2
+gotoFast	KEYWORD2
+gotoSlow	KEYWORD2
+jog	KEYWORD2
+setCordwrapPosition	KEYWORD2
+enableCordwrap	KEYWORD2
+setApproachDirection	KEYWORD2
+getVersion	KEYWORD2
+
+# LITERAL1 - Constants
+
+FORWARD	LITERAL1
+POSITIVE	LITERAL1
+REVERSE	LITERAL1
+NEGATIVE	LITERAL1
