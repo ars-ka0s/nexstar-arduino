@@ -79,7 +79,7 @@ reply NexStar::_sendCommand(byte destID, byte cmd, byte len, byte *data) {
         if (b != cmd) return r;
         break;
       default:
-        if (b < 10) buff[b-5] = b;
+        if (i < 10) buff[i-5] = b;
         break;
     }
 
