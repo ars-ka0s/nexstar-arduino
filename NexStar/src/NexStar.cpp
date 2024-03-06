@@ -55,10 +55,14 @@ reply NexStar::_sendCommand(byte destID, byte cmd, byte len, byte *data) {
   r.len = 0;
   r.bytes = 0;
 
+  unsigned long timeout = millis() + TIMEOUT;
+
   // Now read the reply from the controller.  Return null pointer on error.
-  // TODO: Will hang forever if nothing is received.  Add timeout.
   while (1) {
-    while (_ss->available() < 1);
+    if (millis() > timeout) return r;
+    while (_ss->available() < 1){
+      if (millis() > timeout) return r;
+    };
     b = _ss->read();
     if ((i != 0) && (i != exlen)) sum += b;
 

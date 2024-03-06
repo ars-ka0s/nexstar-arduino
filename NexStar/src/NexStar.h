@@ -1,6 +1,9 @@
 #ifndef _NEXSTAR_H_
 #define _NEXSTAR_H_
 
+// Edit the following line to change the timeout value to avoid hanging forever.
+#define TIMEOUT 1000
+
 #include <Arduino.h>
 #include <SoftwareSerial.h>
 
